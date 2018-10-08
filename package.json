@@ -1,0 +1,31 @@
+{
+  "name": "ant-serv",
+  "version": "1.0.0",
+  "description": "Service for enable antarest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArifZx/ant-serv.git"
+  },
+  "keywords": [
+    "Service",
+    "Enabler"
+  ],
+  "author": "Arif Budiman <budi@bahasa.ai> (bahasa-ai)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArifZx/ant-serv/issues"
+  },
+  "homepage": "https://github.com/ArifZx/ant-serv#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1"
+  }
+}
