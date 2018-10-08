@@ -34,14 +34,14 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var axios_1 = require("axios");
 var AntarestService = /** @class */ (function () {
     function AntarestService(config) {
         this._baseUrl = config.baseUrl;
         this._url = config.url ? config.url : '';
         this._isSQL = config.isSql;
-        this._server = axios_1["default"].create({
+        this._server = axios_1.default.create({
             baseURL: this._baseUrl,
             headers: {
                 Accept: 'application/json',
@@ -89,7 +89,7 @@ var AntarestService = /** @class */ (function () {
             });
         });
     };
-    AntarestService.prototype["delete"] = function (conditions) {
+    AntarestService.prototype.delete = function (conditions) {
         return __awaiter(this, void 0, void 0, function () {
             var promise;
             return __generator(this, function (_a) {
@@ -142,7 +142,7 @@ var AntarestService = /** @class */ (function () {
             var promise;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this["delete"](this.getOptionsId(id))];
+                    case 0: return [4 /*yield*/, this.delete(this.getOptionsId(id))];
                     case 1:
                         promise = _a.sent();
                         return [2 /*return*/, {
@@ -233,4 +233,4 @@ var AntarestService = /** @class */ (function () {
     };
     return AntarestService;
 }());
-exports["default"] = AntarestService;
+exports.default = AntarestService;
